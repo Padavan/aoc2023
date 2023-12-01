@@ -9,3 +9,6 @@ make run
 
 https://wiki.call-cc.org/man/4/The%20R5RS%20standard
 
+https://conservatory.scheme.org/schemers/Documents/Standards/R5RS/HTML/
+
+https://wiki.call-cc.org/chicken-for-python-programmers#splitting-a-string

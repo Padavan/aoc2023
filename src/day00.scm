@@ -1,17 +1,9 @@
 (declare (unit day00))
 (import (chicken io))
+(import (chicken string))
 
-(define (read-it file)
-  (define input-list list ())
-  (let ([fh (open-input-file file)])
-    (let loop ([line (read-line fh)])
-      (if (eof-object? line)
-          (close-input-port fh)
-          (begin
-            (print line)
-            (loop (read-line fh))
-            ))))
-  )
+(define (read-it file-path)
+  (call-with-input-file file-path (lambda (port) (read-lines port))))
 
 (define (read-file-to-list file)
   (read-list (open-input-file file)))
@@ -19,10 +11,6 @@
 (define (run-day-00)
   (display "day00")
   (newline)
-  (display (read-it "input/day00.txt"))
-)
-
-
-
-
-
+  (define task-input (read-it "input/day00.txt"))
+  (display (car task-input))
+  (newline))
