@@ -39,11 +39,8 @@
   
   (string->number (conc (car numbers) (car reverse-numbers))))
 
-; 54251 too high
-; 54249 -right answer !
-
 (define (part-2 input)
-  (display "  Part 2:")
+  (display "  Part 2: ")
   (display
     (foldl + 0 (map (lambda (r) (get-calibration-value-with-letters r)) input)))
   (newline))
