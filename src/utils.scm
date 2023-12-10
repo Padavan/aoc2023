@@ -11,6 +11,13 @@
       list)
     ))
 
+(define (enumerate-1 list)
+  (let ((idx 1))
+    (map
+      (lambda (item) (let ((return-item (cons idx item))) (set! idx (+ idx 1)) return-item)) 
+      list)
+    ))
+
 (define (last l)
   (cond ((null? (cdr l)) (car l))
     (else (last_element (cdr l)))))

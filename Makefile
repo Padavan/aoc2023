@@ -1,5 +1,5 @@
 CSC := $(shell which csc)
-CSC_FLAGS = -O3
+CSC_FLAGS = -O3 -specialize -strict-types
  
 PROGRAM := advent
 

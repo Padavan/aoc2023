@@ -9,8 +9,8 @@
   (read-list (open-input-file file)))
 
 (define (run-day-00)
-  (display "day00")
-  (newline)
+  ; (print "  Part 1: ")
+  ; (newline)
   (define task-input (read-it "input/day00.txt"))
-  (display (car task-input))
+  ; (display (car task-input))
   (newline))

@@ -15,3 +15,5 @@ https://wiki.call-cc.org/chicken-for-python-programmers#splitting-a-string
 
 pattern matching exlpained: https://www.geeksforgeeks.org/introduction-to-pattern-searching-data-structure-and-algorithm-tutorial/
 
+https://learnxinyminutes.com/docs/CHICKEN/
+
